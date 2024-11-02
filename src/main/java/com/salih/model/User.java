@@ -41,7 +41,7 @@ public class User extends BaseEntity implements Serializable {
     @Size(max = 120)
     private String password;
 
-    @Column(name = "profile_image",unique = true,columnDefinition = "TEXT")
+    @Column(name = "profile_image",columnDefinition = "TEXT")
     @Lob
     private String profile_image;
 
