@@ -30,7 +30,7 @@ public class User extends BaseEntity implements Serializable {
 
     @NotBlank
     @Size(max = 100)
-    private String user_name;
+    private String username;
 
     @NotBlank
     @Size(max = 50)
@@ -41,9 +41,9 @@ public class User extends BaseEntity implements Serializable {
     @Size(max = 120)
     private String password;
 
-    @Column(name = "profile_image",columnDefinition = "TEXT")
-    @Lob
-    private String profile_image;
+    //@Column(name = "profile_image",columnDefinition = "TEXT")
+    //@Lob
+    //private String profile_image;
 
 
     @ManyToMany(fetch = FetchType.LAZY)
