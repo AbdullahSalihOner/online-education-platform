@@ -2,6 +2,7 @@ package com.salih.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.CreatedDate;
@@ -15,6 +16,7 @@ import java.time.LocalDateTime;
 @MappedSuperclass // This annotation is work with the @Entity annotation to allow entities to inherit properties from a base class.
 @Getter
 @Setter
+@NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class) // This annotation is used to enable auditing in JPA.
 public abstract class BaseEntity implements Serializable {
     // Serializable is a marker interface in Java, which is used to “mark” Java classes so that objects of these classes may get certain capability.
